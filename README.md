@@ -1,4 +1,4 @@
-# Get Docker Secret
+# Get Docker Secret [![Build Status](https://travis-ci.org/christopher-gibson/get-docker-secret.svg?branch=master)](https://travis-ci.org/christopher-gibson/get-docker-secret)
 
 `get-docker-secret` is a small library to simplify getting secrets from docker.
 This library accepts a name and looks for a file or env for the token.
