@@ -1,0 +1,19 @@
+{
+  "name": "get-docker-secret",
+  "version": "0.0.1",
+  "description": "Get docker secrets from env",
+  "license": "MIT",
+  "repository": "christopher-gibson/get-docker-secret",
+  "author": {
+    "name": "Christopher Gibson",
+    "email": "chris@chrisg.io"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "ava"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "temp-write": "^3.2.0"
+  }
+}
