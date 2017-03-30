@@ -8,22 +8,22 @@ process.env.NO_FILE = './DOES_NOT_EXIST';
 const getDockerSecret = require('./index');
 
 
-test('Gets the token from the env variable', (t) => {
-  const token = getDockerSecret('SECRET');
-  t.is(token, process.env.SECRET);
+test('Gets the secret from the env variable', (t) => {
+  const secret = getDockerSecret('SECRET');
+  t.is(secret, process.env.SECRET);
 });
 
-test('Gets the token from the file in the env variable', (t) => {
-  const token = getDockerSecret('ANOTHER_SECRET');
-  t.is(token, 'FILE_SECRET!');
+test('Gets the secret from the file in the env variable', (t) => {
+  const secret = getDockerSecret('ANOTHER_SECRET');
+  t.is(secret, 'FILE_SECRET!');
 });
 
 test('Returns next available when file does not exist', (t) => {
-  const token = getDockerSecret('NO', 'file');
-  t.is(token, 'file');
+  const secret = getDockerSecret('NO', 'file');
+  t.is(secret, 'file');
 });
 
-test('Uses the default token when no env is set', (t) => {
-  const token = getDockerSecret('DOES_NOT_EXIST', 'default');
-  t.is(token, 'default');
+test('Uses the default when no env is set', (t) => {
+  const secret = getDockerSecret('DOES_NOT_EXIST', 'default');
+  t.is(secret, 'default');
 });
