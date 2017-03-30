@@ -1,6 +1,6 @@
 {
   "name": "get-docker-secret",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Get docker secrets from env",
   "license": "MIT",
   "repository": "christopher-gibson/get-docker-secret",
